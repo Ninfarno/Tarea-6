@@ -3,7 +3,7 @@ Autor: Luis Mendoza Madriz
 Instrucciones:
 - En el paquete DatosImplementados el archivo principal para ejecutarlo es EjemploOrdenes.java no requeriras nada mas
 - En el paquete SolicitarDatos el archivo principal para ejecutar es EjemploOrdenes.java,
--  - Pasos:
+   - Pasos:
      1) Solicitara el numero de clientes
      2) solicitara el nombre y direccion del cliente 1, "Nombre; Direccion"
      3) solicitara el numero de productos del cliente 1
