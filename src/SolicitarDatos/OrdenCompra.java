@@ -1,0 +1,52 @@
+package SolicitarDatos;
+
+import java.util.Date;
+public class OrdenCompra {
+    private static int contador = 1;
+    private int tipo;
+    private String descripcion;
+    private Date fecha;
+    private Cliente cliente;
+    private Producto[] productos;
+
+    public OrdenCompra(String descripcion) {
+        this.tipo = contador++;
+        this.descripcion = descripcion;
+        this.fecha = new Date();
+        this.productos = new Producto[4];
+    }
+
+    public int getTipo() {
+        return tipo;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public Producto[] getProductos() {
+        return productos;
+    }
+
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public void addProducto(Producto producto) {
+        for (int i = 0; i < productos.length; i++) {
+            if (productos[i] == null) {
+                productos[i] = producto;
+                return;
+            }
+        }
+        System.out.println("No se pueden agregar más productos. El límite es de 4.");
+    }
+}
