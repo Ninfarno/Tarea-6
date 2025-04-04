@@ -1,5 +1,6 @@
 package DatosImpementados;
 
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class EjemploOrdenes {
@@ -50,8 +51,10 @@ public class EjemploOrdenes {
 
     // Metodo para imprimir los detalles de una orden
     public static void imprimirOrden(OrdenCompra orden) {
-        System.out.println("------------------------------");
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy hh:mm");
+
         System.out.println("Detalles de la Orden: " + orden.getDescripcion());
+        System.out.println("Fecha de la orden: " + orden.getFecha().format(formato));//La fecha con el formato establecido
         System.out.println("Cliente: " + orden.getCliente().getNombre());
         System.out.println("Dirección: " + orden.getCliente().getDireccion());
 
@@ -63,7 +66,9 @@ public class EjemploOrdenes {
                 granTotal += producto.getPrecio(); // Se van sumando los precios de los productos
             }
         }
+
         System.out.println("Gran Total: " + granTotal);
         System.out.println();
+        System.out.println("------------------------------");
     }
 }

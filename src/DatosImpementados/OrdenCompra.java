@@ -1,18 +1,19 @@
 package DatosImpementados;
 
-import java.util.Date;
+import java.time.LocalDateTime;
+
 public class OrdenCompra {
     private static int contador = 1;
     private int tipo;
     private String descripcion;
-    private Date fecha;
+    private LocalDateTime fecha;
     private Cliente cliente;
     private Producto[] productos;
 
     public OrdenCompra(String descripcion) {
         this.tipo = contador++;
         this.descripcion = descripcion;
-        this.fecha = new Date();
+        this.fecha = LocalDateTime.now();
         this.productos = new Producto[4];
     }
 
@@ -32,7 +33,11 @@ public class OrdenCompra {
         return cliente;
     }
 
-    public void setFecha(Date fecha) {
+    public LocalDateTime getFecha(){
+        return fecha;
+    }
+
+    public void setFecha(LocalDateTime fecha) {
         this.fecha = fecha;
     }
 
