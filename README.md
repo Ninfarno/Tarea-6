@@ -9,4 +9,3 @@ Instrucciones:
      3) solicitara el numero de productos del cliente 1
      4) solicitara el fabricante, nombre del producto y precio, "Fabricante; Nombre; Precio"
      5) El ciclo se repetira hasta el numero de clientes.
-  
