@@ -9,3 +9,6 @@ Instrucciones:
      3) solicitara el numero de productos del cliente 1
      4) solicitara el fabricante, nombre del producto y precio, "Fabricante; Nombre; Precio"
      5) El ciclo se repetira hasta el numero de clientes.
+- En el paquete API se encuentra un archivo pdf con mi "investigacion" sobre API y un codigo con algunas aplicaciones de este
+  para entender como funcionaban (Es mas para mi, que no entendia ni los buenos dias), Nota: El codigo no fue creado por mi
+  sino IA, nuevamente es para que pudiera entender como funcionaban.
