@@ -9,7 +9,7 @@ Instrucciones:
      3) solicitara el numero de productos del cliente 1
      4) solicitara el fabricante, nombre del producto y precio, "Fabricante; Nombre; Precio"
      5) El ciclo se repetira hasta el numero de clientes.
-   -Notas: Aparte de las clases implemente 2 clases mas, la primera Errores.java implemente errores personalizados para distingir
+   - Notas: Aparte de las clases implemente 2 clases mas, la primera Errores.java implemente errores personalizados para distingir
            y administrar los errores que se pueden generar; y el segundo es GetDatos que es para solicitar los datos requeridos para
            que se completen las ordenes.
 - En el paquete API se encuentra un archivo pdf con mi "investigacion" sobre API y un codigo con algunas aplicaciones de este
