@@ -24,24 +24,24 @@ public class EjemploOrdenes {
         // Crear órdenes de compra
         OrdenCompra orden1 = new OrdenCompra("Orden 1");
         orden1.setCliente(cliente1);
-        orden1.addProducto(producto1);
-        orden1.addProducto(producto2);
-        orden1.addProducto(producto3);
-        orden1.addProducto(producto4);
+        orden1.AgregarProducto(producto1);
+        orden1.AgregarProducto(producto2);
+        orden1.AgregarProducto(producto3);
+        orden1.AgregarProducto(producto4);
 
         OrdenCompra orden2 = new OrdenCompra("Orden 2");
         orden2.setCliente(cliente2);
-        orden2.addProducto(producto5);
-        orden2.addProducto(producto6);
-        orden2.addProducto(producto7);
-        orden2.addProducto(producto8);
+        orden2.AgregarProducto(producto5);
+        orden2.AgregarProducto(producto6);
+        orden2.AgregarProducto(producto7);
+        orden2.AgregarProducto(producto8);
 
         OrdenCompra orden3 = new OrdenCompra("Orden 3");
         orden3.setCliente(cliente3);
-        orden3.addProducto(producto1);
-        orden3.addProducto(producto5);
-        orden3.addProducto(producto7);
-        orden3.addProducto(producto2);
+        orden3.AgregarProducto(producto1);
+        orden3.AgregarProducto(producto5);
+        orden3.AgregarProducto(producto7);
+        orden3.AgregarProducto(producto2);
 
         // Imprimir detalles de las órdenes
         imprimirOrden(orden1);

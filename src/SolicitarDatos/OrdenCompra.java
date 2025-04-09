@@ -1,6 +1,8 @@
 package SolicitarDatos;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 public class OrdenCompra {
     private static int contador = 1;
@@ -8,13 +10,13 @@ public class OrdenCompra {
     private String descripcion;
     private LocalDateTime fecha;
     private Cliente cliente;
-    private Producto[] productos;
+    private List<Producto> productos;
 
     public OrdenCompra(String descripcion) {
         this.tipo = contador++;
         this.descripcion = descripcion;
         this.fecha = LocalDateTime.now();
-        this.productos = new Producto[4];
+        this.productos = new ArrayList<>();
     }
 
     public int getTipo() {
@@ -25,7 +27,7 @@ public class OrdenCompra {
         return descripcion;
     }
 
-    public Producto[] getProductos() {
+    public List<Producto> getProductos() {
         return productos;
     }
 
@@ -33,7 +35,7 @@ public class OrdenCompra {
         return cliente;
     }
 
-    public LocalDateTime getFecha(){
+    public LocalDateTime getFecha() {
         return fecha;
     }
 
@@ -46,12 +48,6 @@ public class OrdenCompra {
     }
 
     public void addProducto(Producto producto) {
-        for (int i = 0; i < productos.length; i++) {
-            if (productos[i] == null) {
-                productos[i] = producto;
-                return;
-            }
-        }
-        System.out.println("No se pueden agregar más productos. El límite es de 4.");
+        productos.add(producto);
     }
 }

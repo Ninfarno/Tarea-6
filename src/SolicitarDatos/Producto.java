@@ -22,4 +22,10 @@ public class Producto {
     public double getPrecio() {
         return precio;
     }
+
+    @Override
+    public String toString() {
+        return "Fabricante: " + fabricante + ", Nombre: " + nombre + ", Precio: " + precio;
+    }
+
 }

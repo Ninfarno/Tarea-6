@@ -45,13 +45,19 @@ public class OrdenCompra {
         this.cliente = cliente;
     }
 
-    public void addProducto(Producto producto) {
-        for (int i = 0; i < productos.length; i++) {
-            if (productos[i] == null) {
-                productos[i] = producto;
-                return;
+    public void AgregarProducto(Producto producto) {
+        try {
+            if(productos.length > 4){
+                throw new Exception("El limite de productos se excedio");
             }
+            for (int i = 0; i < productos.length; i++) {
+                if (productos[i] == null) {
+                    productos[i] = producto;
+                    return;
+                }
+            }
+        }catch(Exception e) {
+            System.out.println("Error: "+e.getMessage() + ", el límite es de 4.");
         }
-        System.out.println("No se pueden agregar más productos. El límite es de 4.");
     }
 }
